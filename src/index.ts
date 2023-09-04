@@ -1,4 +1,5 @@
 import { Message, Client, GatewayIntentBits } from 'discord.js';
+import { sendWake } from '@lennyclaes/wake-on-lan';
 
 import { config } from 'dotenv';
 config();
@@ -10,8 +11,9 @@ client.on('messageCreate', (message : Message) => {
 
   console.log(message.content)
 
-  if(message.content === "Hello") {
-    message.channel.send("Hello");
+  if(message.content === "Wake") {
+    sendWake(process.env.MAC || '');
+    message.channel.send("Wake sent!");
   }
 });
 
