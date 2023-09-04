@@ -1,0 +1,13 @@
+{
+  "name": "wake-on-discord",
+  "version": "1.0.0",
+  "description": "Discord bot to send Wake-on-LAN",
+  "main": "index.js",
+  "repository": "https://github.com/CoreNion/WakeOnDiscord.git",
+  "author": "CoreNion <coreinion@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "typescript": "^5.2.2"
+  }
+}
